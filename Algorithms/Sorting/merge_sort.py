@@ -2,7 +2,7 @@
 
 def merge_sort(array):
     """
-    Sort a list in ascending order
+    Sorts a list in ascending order
     Returns a new sorted array
 
     Step 1:
@@ -79,7 +79,7 @@ def merge(left, right):
     return sorted_array
 
 
-customer_array = [4, 2, 5, 1, 3, 6]
-print(f"Original array is {customer_array}")
-sorted_version = merge_sort(customer_array)
+customer_id = [4, 2, 5, 1, 3, 6]
+print(f"Original array is {customer_id}")
+sorted_version = merge_sort(customer_id)
 print(f"Sorted array is {sorted_version}")
