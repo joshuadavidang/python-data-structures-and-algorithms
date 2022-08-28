@@ -2,7 +2,7 @@
 
 def merge_sort(array):
     """
-    Sorts a list in ascending order
+    Sort a list in ascending order
     Returns a new sorted array
 
     Step 1:
@@ -25,7 +25,7 @@ def merge_sort(array):
     if len(array) <= 1:
         return array
 
-    # Splits array into 2 sub-array, split is not a in-built function.
+    # Splits array into 2 sub-array, split is not an in-built function.
     left_half, right_half = split(array)
 
     # Sorts sub-array and returns it recursively
