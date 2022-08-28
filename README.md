@@ -1,4 +1,4 @@
 ### Data Structures & Algorithms
 
-1. Algorithms
+#### Algorithms
 - Merge Sort
