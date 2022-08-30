@@ -2,4 +2,5 @@
 
 #### Algorithms
 - Binary Search
+- Recursive Binary Search
 - Merge Sort
