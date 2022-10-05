@@ -8,7 +8,7 @@ def binary_search(array, target):
     while first <= last:
         mid_point = (first + last) // 2
         if array[mid_point] == target:
-            # target  found
+            # target found
             return mid_point
 
         elif array[mid_point] < target:
