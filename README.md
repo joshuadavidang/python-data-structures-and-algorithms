@@ -1,6 +1,20 @@
 ### Data Structures & Algorithms
 
-#### Algorithms
-- Binary Search
-- Recursive Binary Search
-- Merge Sort
+### Topics
+
+```
+|- Algorithms/
+    |- Recursion & DP
+    |- Searching & Sorting
+        |- binary_search.py
+        |- merge_sort.py
+
+    
+|- Data Structures/
+    |- Map & Dictionaries
+    |- Linked List    
+    |- Trees
+    |- Stacks & Queues
+    |- Heaps
+    |- Graphs
+```
