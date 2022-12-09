@@ -3,7 +3,7 @@ class Solution:
     def twoSums(self, nums, target):
         values = {}
         for index, value in enumerate(nums):
-            print(id, value)
+            print(index, value)
             remaining = target - value
             if remaining in values:
                 return [values[remaining], index]
