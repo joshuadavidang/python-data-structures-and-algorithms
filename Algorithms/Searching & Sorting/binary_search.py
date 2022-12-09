@@ -1,26 +1,24 @@
-# 5 October 2022
-# Algorithm - Binary Search
+class Algorithms:
+    def binary_search(self, data, target):
+        first_index = 0
+        last_index = len(data) - 1
 
-def binary_search(array, target):
-    first = 0  # first element in the array
-    last = len(array) - 1  # last element in the array
+        while first_index < last_index:
+            mid_point = (first_index + last_index) // 2
+            if data[mid_point] == target:
+                return mid_point
 
-    while first <= last:
-        mid_point = (first + last) // 2
-        if array[mid_point] == target:
-            # target found
-            return mid_point
+            elif data[mid_point] < target:
+                # ignore values on the left, iterate forward
+                first_index = mid_point + 1
 
-        elif array[mid_point] < target:
-            # ignore values on the left, iterate forward
-            first = mid_point + 1
+            elif data[mid_point] > target:
+                # ignore values on the right, iterate backwards
+                last_index = mid_point - 1
 
-        elif array[mid_point] > target:
-            # ignore values on the right, iterate backwards
-            last = mid_point - 1
+        return -1
 
-    return None
 
 customer_id = [2, 3, 7, 9, 12, 13]
-find_id = binary_search(customer_id, 12)
+find_id = Algorithms().binary_search(customer_id, 12)
 print(f"Index of the target is at position {find_id}")
