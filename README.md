@@ -4,17 +4,14 @@
 
 ```
 |- Algorithms/
-    |- Recursion & DP
-    |- Searching & Sorting
+    |- Recursion
+    |- Search
         |- binary_search.py
+    |- Sort
+        |- bubble_sort.py
         |- merge_sort.py
 
     
-|- Data Structures/
-    |- Map & Dictionaries
-    |- Linked List    
-    |- Trees
-    |- Stacks & Queues
-    |- Heaps
-    |- Graphs
+|- LeetCode/
+    |- two_sum.py
 ```
