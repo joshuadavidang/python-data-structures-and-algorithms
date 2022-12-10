@@ -1,4 +1,4 @@
-class Algorithms:
+class Sort:
     def bubble_sort(self, data):
         is_sorted = False
         while not is_sorted:
@@ -11,5 +11,5 @@ class Algorithms:
 
 
 num_list = [64, 34, 25, 12, 22, 11, 100, 90]
-res = Algorithms().bubble_sort(num_list)
+res = Sort().bubble_sort(num_list)
 print(res)

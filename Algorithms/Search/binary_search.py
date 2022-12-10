@@ -1,4 +1,4 @@
-class Algorithms:
+class Search:
     def binary_search(self, data, target):
         first_index = 0
         last_index = len(data) - 1
@@ -20,5 +20,5 @@ class Algorithms:
 
 
 customer_id = [2, 3, 7, 9, 12, 13]
-find_id = Algorithms().binary_search(customer_id, 12)
+find_id = Search().binary_search(customer_id, 12)
 print(f"Index of the target is at position {find_id}")

@@ -1,15 +1,3 @@
-"""
-class -> blueprint for how things should be defined, it doesn't contain data
-e.g Dog class shows name and type of breed for defining a dog but doesn't contain the data itself
-methods -> functions in a class
-instance -> object built from class and contains real data, no longer a blueprint but an actual dog
-
-class - form
-instance - filled up form
-many instances can be created
-"""
-
-
 class Dog:
     def __init__(self, name, age):
         self.name = name
@@ -26,3 +14,10 @@ milo = Dog("Milo", 5)
 print(milo.name)
 print(milo.description())
 print(milo.speak("Woof"))
+
+print()
+
+poodle = Dog("Poodle", 10)
+print(poodle.name)
+print(poodle.description())
+print(poodle.speak("WOOF"))
