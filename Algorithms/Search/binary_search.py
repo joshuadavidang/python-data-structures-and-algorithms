@@ -2,20 +2,14 @@ class Search:
     def binary_search(self, data, target):
 
         left, right = 0, len(data) - 1
-
         while left <= right:
-
             mid = (left + right) // 2
-
             if data[mid] > target:
                 right = mid - 1  # ignore values on the right, iterate backwards
-
             elif data[mid] < target:
                 left = mid + 1  # ignore values on the left, iterate forward
-
             else:
                 return mid  # target found
-
         return -1
 
 
