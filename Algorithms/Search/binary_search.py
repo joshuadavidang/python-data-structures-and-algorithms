@@ -1,24 +1,26 @@
 class Search:
     def binary_search(self, data, target):
-        first_index = 0
-        last_index = len(data) - 1
 
-        while first_index < last_index:
-            mid_point = (first_index + last_index) // 2
-            if data[mid_point] == target:
-                return mid_point
+        left, right = 0, len(data) - 1
 
-            elif data[mid_point] < target:
-                # ignore values on the left, iterate forward
-                first_index = mid_point + 1
+        while left <= right:
 
-            elif data[mid_point] > target:
-                # ignore values on the right, iterate backwards
-                last_index = mid_point - 1
+            mid = (left + right) // 2
+
+            if data[mid] > target:
+                right = mid - 1  # ignore values on the right, iterate backwards
+
+            elif data[mid] < target:
+                left = mid + 1  # ignore values on the left, iterate forward
+
+            else:
+                return mid  # target found
 
         return -1
 
 
 customer_id = [2, 3, 7, 9, 12, 13]
-find_id = Search().binary_search(customer_id, 12)
-print(f"Index of the target is at position {find_id}")
+find_id = Search()
+result = find_id.binary_search(customer_id, 7)
+print("Target: 7")
+print(f"Index of the target is at position {result}")
